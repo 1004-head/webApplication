@@ -1,0 +1,146 @@
+/*don't edit this area */
+h1, h2, h3, p, body, div {
+    font-family: Tahoma, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;  
+}
+
+h1  {  
+    font-size: 1.8em; 
+    margin: 0.25em 0 0.25em 0;
+}
+h2  {   
+    font-size: 1.2em;    
+    margin: 0.5em 0 0.25em 0;
+}
+p, body {
+    font-size: 0.9em;
+} 
+p {
+    margin-bottom: 1em;
+}  
+body {
+    background-color: white; 
+}
+/*don't edit this area*/
+
+
+/* Goal 1: start */
+/* you cannot insert, modify, or delete the selectors */
+fieldset {
+    margin: 5em 5em 5em 5em; /* don't change the margin */
+    background-color: rgb(252, 254, 255);
+    display: inline;
+}
+
+table {
+    height: 40rem;
+    align-content: center;
+}
+
+table tbody td{
+    margin: 2rem;
+    
+}
+
+legend {
+    white-space: nowrap;
+    align-self: center;
+    margin: 0;
+    font-weight: bold;
+    background-color: rgb(237, 246, 253);
+    width : 20rem;
+    padding: 0.5em 10rem;
+    text-align: center;
+}
+
+form p {
+    margin : 10%;
+    justify-content: center;
+}
+
+.box {
+    border: solid rgb(181, 210, 245);
+    padding : 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.rectangle {
+    background-color: rgb(237, 246, 253);
+    display: flex;
+    align-items: center;
+    padding : 0.5rem;
+}
+
+.centered {
+    padding : 1em 3em;
+    display: inline-block;
+    text-align: center;
+    width: 30rem;
+}
+
+.rounded {
+    background-color: rgb(144, 160, 194);
+    border-radius: 0.35em;
+    border-color: rgb(123, 161, 203);
+    color : white;
+    padding : 0.4rem;
+    width: 7rem;
+    margin : 0 0.5rem;
+}
+
+/* Goal 1: end */
+
+
+/* Goal 2: start */
+article {
+    background-color: #F5F5F5;
+    margin: 5em 5em 5em 5em;
+    padding: 1em 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+figure {    
+    float: left;
+    padding: 0 1em ;
+    position: relative;
+    text-align: left;
+}
+
+figcaption {
+    width: 140px;
+    background-color: black;
+    color:white;
+    opacity:0.7;
+    height: 20px;
+    padding: 5px;
+    position: absolute;
+    top: 120px;
+}
+
+.overlayed {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.entry {
+    border-top: 1pt solid #ff8800;
+    
+}
+
+.right {
+    float: right;   
+}
+
+.linkbutton {
+    margin-top: 2em;
+    background-color: #ff8800;
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    text-decoration: none; 
+    font-size: 0.75em;   
+}
+/* Goal 2: end */
