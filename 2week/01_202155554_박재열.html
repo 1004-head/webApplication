@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title> 박재열 </title>
+   <style>
+      p{
+         width: 100%;
+      }
+   </style>
+</head>
+<body>
+   <form method="get">
+      <fieldset>
+         <legend>Photo Details</legend>
+         <table width="100%">
+            <tr>
+               <td colspan="2">
+                     <p>
+                        <label>Title</label>
+                        <br>
+                        <input type="text" name="title" style="width: 100%;">
+                     </p>
+                     <p>
+                        <label>Description</label>
+                        <br>
+                        <textarea name="description" style="width: 70%; height: 150px;"></textarea>
+                     </p>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <p>
+                     <label>Continent</label>
+                     <br>
+                     <select name="continent">
+                        <option>Choose continent</option>
+                        <option>Africa</option>
+                        <option>Asia</option>
+                        <option>Europe</option>
+                        <option>North America</option>
+                        <option>South America</option>
+                     </select>
+                  </p>
+                  <p>
+                     <label>Country</label>
+                     <br>
+                     <select name="country">
+                        <option>Choose country</option>
+                        <option>Canada</option>
+                        <option>Mexico</option>
+                        <option>United States</option>
+                     </select>
+                  </p>
+                  <p>
+                     <label>City</label>
+                     <br>
+                     <input type="text" name="city" list="cities">
+                  </p>
+                  <datalist id="cities">
+                     <option>Calgary</option>
+                     <option>Montreal</option>
+                     <option>Toronto</option>
+                     <option>Vancouver</option>
+                  </datalist>
+               </td>
+               <td>
+                  <p>
+                     <label>Copyright?</label>
+                     <br>
+                     <input type="radio" name="copyright1" value="1">All rights reserved
+                     <br>
+                     <input type="radio" name="copyright2" value="2">Creative Commons
+                  </p>
+                  <p>
+                     <label>Creative Commons Types</label><br>
+                     <input type="checkbox" name="commontypes" value="Attribution">Attribution
+                     <br>
+                     <input type="checkbox" name="commontypes" value="Noncommercial">Noncommercial
+                     <br>
+                     <input type="checkbox" name="commontypes" value="No Derivative Works">No Derivative Works
+                     <br>
+                     <input type="checkbox" name="commontypes" value="Share Alike">Share Alike
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <p>
+                     <label>I accept the software license</label>
+                     <input type="checkbox" name="accept" value="Accept">
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <p>
+                     <label>Rate this photo:</label><br>
+                     <input type="number" min="1" max="5" name="rate">
+                  </p>
+                  <p>
+                     <label>Color Collection:</label><br>
+                     <input type="color" name="color">
+                  </p>
+               </td>
+               <td>
+                  <p>
+                     <label>Date Taken:</label><br>
+                     <input type="date" name="date">
+                  </p>
+                  <p>
+                     <label>Time Taken:</label><br>
+                     <input type="time" name="time">
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="submit" name="submit" value="Submit">
+                  <input type="button" name="clear" value="Clear Form">
+               </td>
+            </tr>
+         </table>
+      </fieldset>
+   </form>
+</body>
+</html>
