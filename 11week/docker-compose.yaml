@@ -1,0 +1,25 @@
+version: '3.3'
+services:
+    web:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        container_name: web
+        depends_on:
+            - db
+        volumes:
+            - ./:/var/www/html
+        ports:
+            - 80:80
+
+    db:
+        container_name: db
+        image: mariadb:10.6
+        environment:
+            MYSQL_DATABASE_USER: testuser
+            MYSQL_ROOT_PASSWORD: testuser
+            MYSQL_DATABASE: travels
+        volumes:
+            - ./lab/sql/travels.sql:/docker-entrypoint-initdb.d/1-init.sql
+        ports:
+            - 3306:3306
