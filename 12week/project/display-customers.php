@@ -18,8 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
 // 우측 네비게이션에 categories와 imprints를 위한 인터페이스
 // Goal 1.2 - categoriesCollection과 imprintsCollection 클래스의 findALL(); 함수를 통해 $categories와 $imprints 생성
 
-$categories = CategoriesCollection::findAll();
-$imprints = ImprintsCollection::findAll();
+$categories = CategoryCollection::findAll();
+$imprints = ImprintCollection::findAll();
 
 
 ?>
