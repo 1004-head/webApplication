@@ -2,24 +2,24 @@
 
 require_once('includes/book-setup.inc.php');
 
-// if we have search string search for customer matches (검색을 위한 string을 입력 받은 경우)
+// if we have search string search for customer matches (寃??깋?쓣 ?쐞?븳 string?쓣 ?엯?젰 諛쏆?? 寃쎌슦)
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
    $search = $_GET['search'];
    $customers = CustomerCollection::findBy('LastName Like ?', array($search . '%'));
 } else {
-   // otherwise get all customers(string 입력이 없으면 모든 customer를 get)
+   // otherwise get all customers(string ?엯?젰?씠 ?뾾?쑝硫? 紐⑤뱺 customer瑜? get)
 
-   // Active Record pattern을 사용하여 DB와 interface.
-   // Goal 1.1 - CustomerCollection 클래스의 findALL(); 함수를 통해 $customers 생성
+   // Active Record pattern?쓣 ?궗?슜?븯?뿬 DB??? interface.
+   // Goal 1.1 - CustomerCollection ?겢?옒?뒪?쓽 findALL(); ?븿?닔瑜? ?넻?빐 $customers ?깮?꽦
    $customers = CustomerCollection::findAll();
 
 }
 
-// 우측 네비게이션에 categories와 imprints를 위한 인터페이스
-// Goal 1.2 - categoriesCollection과 imprintsCollection 클래스의 findALL(); 함수를 통해 $categories와 $imprints 생성
+// ?슦痢? ?꽕鍮꾧쾶?씠?뀡?뿉 categories??? imprints瑜? ?쐞?븳 ?씤?꽣?럹?씠?뒪
+// Goal 1.2 - categoriesCollection怨? imprintsCollection ?겢?옒?뒪?쓽 findALL(); ?븿?닔瑜? ?넻?빐 $categories??? $imprints ?깮?꽦
 
-$categories = CategoriesCollection::findAll();
-$imprints = ImprintsCollection::findAll();
+$categories = CategoryCollection::findAll();
+$imprints = ImprintCollection::findAll();
 
 
 ?>

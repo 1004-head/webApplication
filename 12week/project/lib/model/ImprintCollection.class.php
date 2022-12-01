@@ -31,10 +31,10 @@ class ImprintCollection  extends DomainObjectCollection
       // CategoryCollection.class 참고
       $dbAdapter = ActiveRecordHelper::getDatabaseAdapter();
 
-      $imprintsGate = new ImprintsTableGateway($dbAdapter);
+      $imprintsGate = new ImprintTableGateway($dbAdapter);
       $data = $imprintsGate->findAllSorted(true);
 
-      $imprints = new ImprintsCollection($data);
+      $imprints = new ImprintCollection($data);
       return $imprints;
    }
 }

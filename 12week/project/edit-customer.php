@@ -104,70 +104,70 @@ $requestedCustomer = Customer::findByKey($id);
             <div class="form-group">
               <label for="firstname" class="col-md-3 control-label">First Name</label>
               <div class="col-md-4">
-                <input type="text" class="form-control" name="firstname" value="<?php // display first name here 
+                <input type="text" class="form-control" name="firstname" value="<?php echo etf8_encode($requestedCustomer->FirstName);
                                                                                 ?>">
               </div>
             </div>
             <div class="form-group">
               <label for="lastname" class="col-md-3 control-label">Last Name</label>
               <div class="col-md-4">
-                <input type="text" class="form-control" name="lastname" value="<?php // display last name here 
+                <input type="text" class="form-control" name="lastname" value="<?php echo utf8_encode($requestedCustomer->LastName);
                                                                                 ?>">
               </div>
             </div>
             <div class="form-group">
               <label for="email" class="col-md-3 control-label">Email</label>
               <div class="col-md-8">
-                <input type="email" class="form-control" name="email" value="<?php // display email here 
+                <input type="email" class="form-control" name="email" value="<?php echo utf8_encode($requestedCustomer->Email);
                                                                               ?>">
               </div>
             </div>
             <div class="form-group">
               <label for="university" class="col-md-3 control-label">University</label>
               <div class="col-md-8">
-                <input type="text" class="form-control" name="university" value="<?php // display university here 
+                <input type="text" class="form-control" name="university" value="<?php echo utf8_encode($requestedCustomer->University); 
                                                                                   ?>">
               </div>
             </div>
             <div class="form-group">
               <label for="lastname" class="col-md-3 control-label">Address</label>
               <div class="col-md-8">
-                <input type="text" class="form-control" name="address" value="<?php // display address here
+                <input type="text" class="form-control" name="address" value="<?php echo utf8_encode($requestedCustomer->Address);
                                                                               ?>">
               </div>
             </div>
             <div class="form-group">
               <label for="city" class="col-md-3 control-label">City</label>
               <div class="col-md-3">
-                <input type="text" class="form-control" name="city" value="<?php // display city here
+                <input type="text" class="form-control" name="city" value="<?php echo utf8_encode($requestedCustomer->City);
                                                                             ?>">
               </div>
             </div>
             <div class="form-group">
               <label for="region" class="col-md-3 control-label">Region</label>
               <div class="col-md-2">
-                <input type="text" class="form-control" name="region" value="<?php // display region here 
+                <input type="text" class="form-control" name="region" value="<?php echo utf8_encode($requestedCustomer->Region); 
                                                                               ?>">
               </div>
             </div>
             <div class="form-group">
               <label for="postal" class="col-md-3 control-label">Postal</label>
               <div class="col-md-2">
-                <input type="text" class="form-control" name="postal" value="<?php // display postal here 
+                <input type="text" class="form-control" name="postal" value="<?php echo utf8_encode($requestedCustomer->Postal);
                                                                               ?>">
               </div>
             </div>
             <div class="form-group">
               <label for="country" class="col-md-3 control-label">Country</label>
               <div class="col-md-3">
-                <input type="text" class="form-control" name="country" value="<?php // display country here 
+                <input type="text" class="form-control" name="country" value="<?php echo utf8_encode($requestedCustomer->Country);
                                                                               ?>">
               </div>
             </div>
             <div class="form-group">
               <label for="phone" class="col-md-3 control-label">Phone</label>
               <div class="col-md-3">
-                <input type="tel" class="form-control" name="phone" value="<?php // display phone here 
+                <input type="tel" class="form-control" name="phone" value="<?php echo utf8_encode($requestedCustomer->Phone);
                                                                             ?>">
               </div>
             </div>
